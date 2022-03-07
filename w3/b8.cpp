@@ -7,7 +7,7 @@ int main()
     string text;
     getline(cin,text);
     int i=0;
-    while (i<=text.size())
+    while (i<text.size())
     {
        if (text.substr(i,4) != "Zues")
             {

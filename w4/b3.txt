@@ -1,0 +1,47 @@
+
+void printArrow(int n, bool left){
+    if(left==0){
+        for(int i=1;i<=2*n-1;i++){
+            if(i<=n){
+                for(int k=1;k<=2*i-2;k++){
+                    cout << " ";
+                }
+                for(int j=n;j>=i;j--){
+                    cout <<"*";
+                }
+                cout << endl;
+            }
+            if(i>n){
+            	for(int k=1;k<=2*(2*n-1-i);k++){
+            		cout <<" ";
+				}
+                for(int j=n;j<=i;j++){
+                    cout <<"*";
+                }
+                cout << endl;
+            }
+        }
+    }
+    else{
+    	for(int i=1;i<=2*n-1;i++){
+            if(i<=n){
+                for(int k=1;k<=n-i;k++){
+                    cout << " ";
+                }
+                for(int j=n;j>=i;j--){
+                    cout <<"*";
+                }
+                cout << endl;
+            }
+            if(i>n){
+            	for(int k=1;k<=i-n;k++){
+            		cout <<" ";
+				}
+                for(int j=n;j<=i;j++){
+                    cout <<"*";
+                }
+                cout << endl;
+            }
+        }	
+	}
+}
